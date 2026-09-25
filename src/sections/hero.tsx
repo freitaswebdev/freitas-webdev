@@ -82,7 +82,9 @@ export function Hero() {
       >
         <div className="capability-track">
           <CapabilityGroup />
-          <CapabilityGroup hidden />
+          {Array.from({ length: 5 }, (_, index) => (
+            <CapabilityGroup hidden key={index} />
+          ))}
         </div>
       </div>
     </section>

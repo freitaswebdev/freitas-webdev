@@ -141,7 +141,7 @@
 
 @keyframes capability-marquee {
   from {
-    transform: translateX(-50%);
+    transform: translateX(-16.666667%);
   }
   to {
     transform: translateX(0);
