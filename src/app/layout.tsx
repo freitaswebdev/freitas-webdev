@@ -32,7 +32,10 @@ export default async function RootLayout({
   const contacts = await getContacts();
   return (
     <html lang="pt-BR">
-      <body id="top">
+      <body id="top" className="intro-pending">
+        <noscript>
+          <style>{`.intro-pending > :not(.intro-sequence) { opacity: 1 !important; }`}</style>
+        </noscript>
         <IntroSequence />
         <a className="skip-link" href="#conteudo">
           Pular para o conteúdo

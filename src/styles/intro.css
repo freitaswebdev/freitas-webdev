@@ -165,6 +165,10 @@
   overflow: hidden;
 }
 
+.intro-pending > :not(.intro-sequence):not(noscript) {
+  opacity: 0;
+}
+
 .intro-complete .header-inner > *,
 .intro-complete .hero-topline > *,
 .intro-complete .hero-copy > .eyebrow,

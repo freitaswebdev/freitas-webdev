@@ -11,21 +11,27 @@ export function IntroSequence() {
     ).matches;
 
     if (reduced) {
+      document.body.classList.remove("intro-pending");
       document.body.classList.add("intro-complete");
       setVisible(false);
       return;
     }
 
     document.body.classList.add("intro-active");
+    const reveal = window.setTimeout(() => {
+      document.body.classList.remove("intro-pending");
+      document.body.classList.add("intro-complete");
+    }, 2150);
     const complete = window.setTimeout(() => {
       document.body.classList.remove("intro-active");
-      document.body.classList.add("intro-complete");
       setVisible(false);
     }, 2850);
 
     return () => {
+      window.clearTimeout(reveal);
       window.clearTimeout(complete);
       document.body.classList.remove("intro-active");
+      document.body.classList.remove("intro-pending");
     };
   }, []);
 
