@@ -120,9 +120,11 @@
     font-size: 9px;
   }
   .capability-strip {
-    padding: 18px 20px;
-    gap: 22px;
     font-size: 9px;
+  }
+  .capability-group {
+    gap: 22px;
+    padding: 18px 20px;
   }
   .capability-strip i {
     font-size: 13px;

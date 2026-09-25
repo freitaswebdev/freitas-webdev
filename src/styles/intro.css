@@ -175,7 +175,7 @@
 .intro-complete .hero-copy > p,
 .intro-complete .hero-actions,
 .intro-complete .hero-bottom > *,
-.intro-complete .capability-strip > * {
+.intro-complete .capability-strip {
   animation: site-element-in 0.7s var(--ease) both;
 }
 
@@ -232,24 +232,8 @@
   animation-delay: 0.82s;
 }
 
-.intro-complete .capability-strip > *:nth-child(1) {
-  animation-delay: 0.72s;
-}
-
-.intro-complete .capability-strip > *:nth-child(2) {
-  animation-delay: 0.78s;
-}
-
-.intro-complete .capability-strip > *:nth-child(3) {
+.intro-complete .capability-strip {
   animation-delay: 0.84s;
-}
-
-.intro-complete .capability-strip > *:nth-child(4) {
-  animation-delay: 0.9s;
-}
-
-.intro-complete .capability-strip > *:nth-child(5) {
-  animation-delay: 0.96s;
 }
 
 @keyframes intro-draw {

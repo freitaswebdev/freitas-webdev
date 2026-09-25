@@ -1,4 +1,9 @@
 @media (prefers-reduced-motion: reduce) {
+  .capability-track {
+    animation: none;
+    transform: none;
+  }
+
   html {
     scroll-behavior: auto;
   }

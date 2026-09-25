@@ -107,21 +107,45 @@
 }
 .capability-strip {
   border-block: 1px solid var(--line);
-  display: flex;
-  justify-content: space-around;
-  gap: 24px;
-  align-items: center;
-  padding: 22px 32px;
+  overflow: hidden;
   white-space: nowrap;
   color: #a8adba;
   font-family: var(--display);
   font-size: 12px;
   letter-spacing: 0.08em;
 }
+
+.capability-track,
+.capability-group {
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.capability-track {
+  will-change: transform;
+  animation: capability-marquee 28s linear infinite;
+}
+
+.capability-group {
+  flex: none;
+  gap: 24px;
+  padding: 22px 32px;
+}
+
 .capability-strip i {
   font-size: 16px;
   font-style: normal;
   color: var(--red);
+}
+
+@keyframes capability-marquee {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 .orbital {
   height: 580px;

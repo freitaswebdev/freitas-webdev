@@ -1,7 +1,31 @@
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { Fragment } from "react";
 import { Orbital } from "@/components/orbital";
 import { Eyebrow, Button } from "@/components/ui";
+
+const capabilities = [
+  "WEBSITES",
+  "SISTEMAS WEB",
+  "SAAS",
+  "APLICAÇÕES",
+  "AUTOMAÇÃO",
+  "EXPERIÊNCIAS DIGITAIS",
+];
+
+function CapabilityGroup({ hidden = false }: { hidden?: boolean }) {
+  return (
+    <div className="capability-group" aria-hidden={hidden || undefined}>
+      {capabilities.map((capability, index) => (
+        <Fragment key={capability}>
+          {index > 0 && <i>✳</i>}
+          <span>{capability}</span>
+        </Fragment>
+      ))}
+    </div>
+  );
+}
+
 export function Hero() {
   return (
     <section className="hero">
@@ -52,18 +76,14 @@ export function Hero() {
         <span>ESTRATÉGIA + DESIGN + DESENVOLVIMENTO</span>
         <span className="hero-index">[ FW — 001 ]</span>
       </div>
-      <div className="capability-strip">
-        <span>WEBSITES</span>
-        <i>✳</i>
-        <span>SISTEMAS WEB</span>
-        <i>✳</i>
-        <span>SAAS</span>
-        <i>✳</i>
-        <span>APLICAÇÕES</span>
-        <i>✳</i>
-        <span>AUTOMAÇÃO</span>
-        <i>✳</i>
-        <span>EXPERIÊNCIAS DIGITAIS</span>
+      <div
+        className="capability-strip"
+        aria-label="Websites, sistemas web, SaaS, aplicações, automação e experiências digitais"
+      >
+        <div className="capability-track">
+          <CapabilityGroup />
+          <CapabilityGroup hidden />
+        </div>
       </div>
     </section>
   );
