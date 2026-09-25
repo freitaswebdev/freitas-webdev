@@ -1,0 +1,42 @@
+.consent-banner {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 70;
+  background: #101620;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  max-width: 420px;
+  padding: 23px;
+  box-shadow: 0 10px 50px #0008;
+}
+.consent-banner p {
+  font-size: 12px;
+}
+.consent-banner > div {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+.consent-banner button {
+  background: transparent;
+  border: 1px solid var(--line);
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-size: 11px;
+}
+.consent-banner button:last-child {
+  background: #cc2d40;
+  border-color: #cc2d40;
+  color: white;
+}
+.privacy-preference {
+  font-size: 9px;
+  display: block;
+  margin: 0 auto 25px;
+  padding: 8px;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  color: var(--muted);
+}

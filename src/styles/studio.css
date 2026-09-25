@@ -1,0 +1,209 @@
+/* Process, studio, technology */
+.process-section {
+  background: #0a0e17;
+  border-block: 1px solid var(--line);
+}
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+}
+.process-intro {
+  position: sticky;
+  top: 140px;
+  align-self: start;
+}
+.process-intro h2 {
+  font-size: clamp(35px, 4vw, 58px);
+}
+.process-intro > p {
+  margin: 25px 0;
+  font-size: 13px;
+}
+.process-step {
+  display: grid;
+  grid-template-columns: 65px 1fr;
+  gap: 25px;
+  border-top: 1px solid var(--line);
+  padding: 43px 0;
+}
+.process-step:first-child {
+  padding-top: 25px;
+}
+.step-number {
+  font-family: var(--display);
+  font-size: 34px;
+  line-height: 1;
+  color: var(--red);
+  letter-spacing: -2px;
+}
+.process-step h3 {
+  font-size: 29px;
+  margin-bottom: 14px;
+}
+.process-step p {
+  font-size: 13px;
+  line-height: 1.9;
+}
+.deliverable {
+  margin-top: 22px;
+  border-left: 1px solid var(--red);
+  padding-left: 14px;
+  color: #c2c6d0;
+  font-size: 11px;
+}
+.deliverable span {
+  display: block;
+  font-size: 8px;
+  color: var(--red);
+  letter-spacing: 0.13em;
+  margin-bottom: 6px;
+}
+.process-diagram {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 65px;
+  max-width: 310px;
+  font-size: 8px;
+  letter-spacing: 0.13em;
+  color: #9ca4b4;
+}
+.process-diagram i {
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, #f0445210, var(--red));
+}
+.process-diagram b {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #f0445260;
+  border-radius: 12px;
+  color: var(--red);
+  font-size: 22px;
+  font-family: var(--display);
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.75fr 1.4fr;
+  gap: 12%;
+  align-items: center;
+}
+.about-mark {
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  background: radial-gradient(ellipse, #f044520c, transparent 65%);
+  position: relative;
+  overflow: hidden;
+}
+.about-mark::before,
+.about-mark::after {
+  content: "";
+  position: absolute;
+  inset: 14%;
+  border: 1px solid #f0445235;
+  transform: rotate(35deg);
+}
+.about-mark::after {
+  transform: rotate(-15deg);
+}
+.about-mark > span {
+  font-family: var(--display);
+  font-size: 140px;
+  letter-spacing: -14px;
+  color: var(--red);
+  line-height: 1;
+}
+.about-mark > small {
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  margin-top: 30px;
+}
+.about-grid h2 {
+  font-size: clamp(32px, 3.2vw, 46px);
+}
+.about-grid p {
+  max-width: 520px;
+  margin-top: 25px;
+  font-size: 13px;
+}
+.about-grid .text-link {
+  margin-top: 24px;
+}
+.technology-section {
+  border-top: 1px solid var(--line);
+}
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+  border-block: 1px solid var(--line);
+}
+.tech-grid article {
+  padding: 35px 25px 35px 0;
+}
+.tech-grid article + article {
+  padding-left: 30px;
+  border-left: 1px solid var(--line);
+}
+.tech-grid .micro {
+  font-size: 9px;
+  color: var(--red);
+}
+.tech-grid p {
+  font-size: 12px;
+  margin: 18px 0 24px;
+}
+.tech-grid article > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tech-tag {
+  font-family: var(--display);
+  font-size: 14px;
+  border: 1px solid var(--line);
+  padding: 6px 13px;
+  border-radius: 3px;
+}
+.faq-section {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 10%;
+  border-top: 1px solid var(--line);
+}
+.faq-section details {
+  border-bottom: 1px solid var(--line);
+}
+.faq-section summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 23px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  font-size: 13px;
+}
+.faq-section summary::-webkit-details-marker {
+  display: none;
+}
+.faq-section summary > span {
+  color: var(--red);
+  font-size: 20px;
+  line-height: 1;
+  transition: transform 0.2s;
+}
+.faq-section details[open] summary > span {
+  transform: rotate(45deg);
+}
+.faq-section details > p {
+  font-size: 12px;
+  line-height: 1.9;
+  padding-bottom: 25px;
+}

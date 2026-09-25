@@ -1,0 +1,27 @@
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .will-reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    clip-path: none;
+  }
+  .stacked-project {
+    position: relative;
+    top: auto;
+  }
+  .orbit-system {
+    transform: translateX(-50%) rotate(-25deg);
+  }
+  .scroll-progress {
+    display: none;
+  }
+}

@@ -1,0 +1,161 @@
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none;
+  }
+  .header-cta {
+    margin-left: auto;
+  }
+  .menu-trigger {
+    display: grid;
+    place-items: center;
+  }
+  .header-inner {
+    height: 78px;
+  }
+  .hero-main {
+    grid-template-columns: 1.1fr 1fr;
+    padding-block: 55px;
+  }
+  .hero h1 {
+    font-size: 70px;
+  }
+  .hero-topline {
+    padding-top: 108px;
+  }
+  .hero-topline > span:last-child {
+    font-size: 7px;
+  }
+  .orbital {
+    height: 480px;
+  }
+  .orbit-system {
+    width: 320px;
+    height: 320px;
+    top: 75px;
+  }
+  .orbit-core {
+    inset: 70px;
+  }
+  .orbit-core > span {
+    font-size: 80px;
+  }
+  .orbit-core > span > span {
+    font-size: 58px;
+    right: -30px;
+  }
+  .label-a {
+    top: 70px;
+  }
+  .label-b {
+    top: 300px;
+  }
+  .label-c {
+    bottom: 55px;
+    font-size: 5px;
+  }
+  .hero-actions {
+    gap: 20px;
+  }
+  .hero-actions .button {
+    padding-inline: 17px;
+    gap: 20px;
+  }
+  .hero-actions .text-link {
+    font-size: 10px;
+    gap: 10px;
+  }
+  .capability-strip {
+    justify-content: flex-start;
+    overflow: hidden;
+    font-size: 10px;
+  }
+  .section {
+    padding-block: 85px;
+  }
+  .heading-row h2 {
+    font-size: 42px;
+  }
+  .process-grid {
+    gap: 7%;
+  }
+  .process-step {
+    grid-template-columns: 45px 1fr;
+    gap: 18px;
+  }
+  .process-step h3 {
+    font-size: 25px;
+  }
+  .step-number {
+    font-size: 29px;
+  }
+  .process-step p {
+    font-size: 12px;
+  }
+  .about-grid {
+    gap: 7%;
+  }
+  .about-mark > span {
+    font-size: 100px;
+  }
+  .about-grid h2 {
+    font-size: 33px;
+  }
+  .cta-star {
+    font-size: 180px;
+  }
+  .cta-bottom {
+    align-items: flex-start;
+  }
+  .cta-bottom > div {
+    flex-direction: column;
+  }
+  .cta-bottom .button {
+    min-width: 240px;
+  }
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .contact-options {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+  .contact-options > p {
+    grid-column: 1/-1;
+  }
+  .contact-options > .micro {
+    grid-column: 1/-1;
+    margin-top: 5px;
+  }
+  .form-card {
+    padding: 35px;
+  }
+  .project-card-right {
+    gap: 15px;
+  }
+  .case-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .case-facts {
+    gap: 20px;
+  }
+  .principles {
+    gap: 15px;
+  }
+  .principles article {
+    padding: 25px;
+  }
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-top {
+    grid-template-columns: 1.1fr 0.6fr 1fr;
+    gap: 20px;
+  }
+  .footer-top > div > a:not(.footer-brand) {
+    font-size: 10px;
+  }
+}

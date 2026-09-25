@@ -1,0 +1,23 @@
+.delete-lead {
+  border: 0;
+  background: none;
+  color: #f79ca5;
+  text-decoration: underline;
+  font-size: 10px;
+  margin-left: 18px;
+  min-height: 40px;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 10px;
+  margin-top: 25px;
+}
+.pagination button {
+  background: transparent;
+  border: 1px solid var(--line);
+  padding: 10px;
+  border-radius: 3px;
+}
